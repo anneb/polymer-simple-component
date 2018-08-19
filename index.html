@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Simple Polymer app</title>
+
+    <!--
+      The `<base>` tag below is present to support two advanced deployment options:
+      1) Differential serving. 2) Serving from a non-root path.
+
+      Instead of manually editing the `<base>` tag yourself, you should generally either:
+      a) Add a `basePath` property to the build configuration in your `polymer.json`.
+      b) Use the `--base-path` command-line option for `polymer build`.
+    -->
+    <base href="/">
+  </head>
+  <body>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>    
+    <script type="module" src="src/components/simple-component.js"></script>
+    <simple-component></simple-component>
+  </body>
+</html>
